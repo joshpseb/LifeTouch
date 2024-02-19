@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="loginPage.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+
+        body {
+            font-family: 'Archivo', sans-serif;
+            background: url('https://papayacare.com/wp-content/uploads/2018/03/Assisted-Living-Services-papayacare1.jpg') no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background-color: #444;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+            padding: 20px;
+            width: 300px;
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+        .btn {
+            background-color: #008CBA;
+            color: white;
+            padding: 14px 20px;
+            margin: 15px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 4px;
+        }
+        .btn:hover {
+            opacity: 0.8;
+        }
+        .extra {
+            color: white;
+            padding-top: 16px;
+        }
+        a {
+            color: dodgerblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <a href="landingPage.html">
+            <button type="submit" class="btn">Login</button>
+        </a>
+
+        <div class="extra">
+            Don't have an account? <a href="#">Sign up</a>
+        </div>
+    </div>
+</body>
+</html>

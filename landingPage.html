@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LifeTouch Home</title>
+  <link rel="stylesheet" href="landingPage.css">
+  <style>
+    /* Add the CSS for the dropdown menu here */
+    .dropdown {
+      display: none;
+      position: absolute;
+      background-color: #152537; /* Dropdown background color */
+      min-width: 120px; /* Adjust the width of the dropdown menu */
+      z-index: 1;
+      top: calc(100% + 5px); /* Position dropdown below the parent with a small gap */
+      left: 0; /* Align dropdown with the left edge of the parent */
+      border-radius: 20px; /* Add border-radius to create rounded corners */
+    }
+
+    .dropdown li {
+      display: block; /* Display items vertically */
+      text-align: center; /* Align text in the center */
+    }
+
+    .dropdown li a {
+      color: #fff;
+      padding: 10px 20px; /* Adjust vertical and horizontal padding */
+      text-decoration: none;
+      display: block; /* Make dropdown links block-level for proper spacing */
+    }
+
+    .dropdown li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .navigation ul li:hover .dropdown {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Product Logo">
+    <div class="navigation">
+      <ul>
+        <li><a href="about.html">About</a></li> <!-- Moved About to the first position -->
+        <li><a href="#">proACTIVE</a>
+          <ul class="dropdown">
+            <li><a href="fallDect.html">FallDect</a></li>
+            <li><a href="reminder.html">Reminder</a></li>
+            <li><a href="assistance.html">Assistance</a></li>
+          </ul>
+        </li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="login.html">Login</a>
+        </li> <!-- Moved Login to the fourth position -->
+        <li><a href="contact.html" class="contact-button">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+  
+  
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="old1.png" style="width:105%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="old2.png" style="width:108.5%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="old3.png" style="width: 130%">
+    </div>
+  </div>
+
+    
+  <script src="landingPage.js"></script>
+</body>
+</html>
+

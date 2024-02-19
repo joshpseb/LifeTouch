@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  <header>
+    <a href="landingPage.html">
+      <img src="logo.png" alt="Product Logo">
+    </a>
+    <div class="navigation">
+      <ul>
+        <li><a href="about.html">About</a></li> <!-- Moved About to the first position -->
+        <li><a href="#">proACTIVE</a>
+          <ul class="dropdown">
+            <li><a href="fallDect.html">  FallDect </a></li>
+            <li><a href="reminder.html">  Reminder</a></li>
+            <li><a href="assistance.html">Assistance</a></li>
+          </ul>
+        </li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="login.html">Login</a>
+          
+        </li> <!-- Moved Login to the fourth position -->
+        <li><a href="contact.html" class="contact-button">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+  
+  <main>
+    <section class="contact co1-position-relative co1-z-index-1">
+      <div class="co1-container co1-max-width-lg">
+        <div class="co1-margin-bottom-lg">
+          <h1 class="co1-text-center">Contact Us</h1>
+        </div>
+    
+        <div class="co1-grid co1-gap-y-lg co1-gap-lg@md">
+          <div class="co1-col-6@md">
+            <dl class="details-list details-list--rows">
+              <div class="details-list__item co1-padding-y-md co1-flex@md co1-justify-between@md">
+                <dt class="co1-font-bold co1-margin-bottom-2xs co1-margin-bottom-0@md">Address</dt>
+                <dd class="co1-line-height-md co1-text-right@md">
+                  86  Whitby Road <br>IP20 6JA <br>London, UK
+                </dd>
+              </div>
+            
+              <div class="details-list__item co1-padding-y-md co1-flex@md co1-justify-between@md">
+                <dt class="co1-font-bold co1-margin-bottom-2xs co1-margin-bottom-0@md">Email</dt>
+                <dd>
+                  <a href="mailto:webmaster@example.com">hello@myemail.com</a>
+                </dd>
+              </div>
+            
+              <div class="details-list__item co1-padding-y-md co1-flex@md co1-justify-between@md">
+                <dt class="co1-font-bold co1-margin-bottom-2xs co1-margin-bottom-0@md">Phone</dt>
+                <dd class="co1-line-height-md co1-text-right@md">
+                  <p><a href="tel:+44 7656 6455">+44 7656 6455</a></p>
+                  <p class="co1-color-contrast-medium">Mon - Fri, 9AM - 5PM</p>
+                </dd>
+              </div>
+            </dl>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    <!-- 
+      ⚠️ Make sure to include the Google Maps script right before your page body closing tag
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initGoogleMap"></script> 
+      Replace 'YOUR_API_KEY' with your google maps API key
+    -->
+  </main>
+  <script src="landingPage.js"></script>
+</body>
+</html>
